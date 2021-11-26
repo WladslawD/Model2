@@ -1,0 +1,14 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    int n;
+    string s = get_string("Введіть рядок: ");
+    n = strlen(s);
+    for (int i = n; i >= 0; i--)
+    {
+        printf("%c", s[i]);
+    }
+}
