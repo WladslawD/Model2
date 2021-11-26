@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, p = 0;
+    do
+    {
+        printf("Введіть кількість значень масиву: ");
+        scanf("%i", &n);
+    }
+    while(n <= 1 || n >= 100);
+    
+    int N[n];
+    printf("Заповніть масив: ");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%i", &N[i]);
+        if ( N[i] > 0) p++;
+    }
+    
+    printf("%i\n", p);
+    if (p!=0){
+        for (int i = 0; i < n; i++)
+        {
+            if ( N[i] > 0) printf("%i ", N[i]);
+        }
+    }
+    else printf("NO");
+} 
